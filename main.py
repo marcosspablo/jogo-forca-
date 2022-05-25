@@ -193,7 +193,6 @@ def verificaLetra(letra):
 jogar = True
 while jogar:
     if palavra_escolhida == '':
-        playsound.playsound('naruto.mp3')
         print(">" * 32, "UNIESP", "<" * 32, "\n                        Introdução a Programação\n")
         print("*   Grupo:\n*   Guilherme José - 2022111510046@iesp.edu.br\n*   Jorge de Melo - 2022111510039@iesp.edu.br")
         print("*   Marcelo Medeiros - 2022111510069@iesp.edu.br\n*   Marcos Pablo - 2022111510024@iesp.edu.br")
@@ -235,7 +234,7 @@ while jogar:
         else:
             print("\n")
             print("#" * 50)
-            print("INFORME APENAS 1 LETRA POR VEZ!!!!")
+            print("                INFORME APENAS 1 LETRA POR VEZ!!!!")
             print("#" * 50)
         print(f'\nCategoria: {categoria}')
         print(f'Dica: {dica}\n')
@@ -248,7 +247,7 @@ while jogar:
         print(f'Tentivas restantes: {tentativas}\n')
         jogar = verificarJogo()
         if jogar == False:
-            teste = input("Desejar jogar novamente? sim ou nao?").lower()
+            teste = input("Desejar jogar novamente? Digite: sim :").lower()
             if teste == 'sim':
                 palavra_escondida = []
                 letras_corretas = []
