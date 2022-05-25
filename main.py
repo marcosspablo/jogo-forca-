@@ -1,5 +1,4 @@
 import random
-import playsound
 from listas import *
 
 
@@ -110,7 +109,6 @@ def buscaLetra(letra):
 
 def verificarJogo():
     if ''.join(palavra_escondida) == palavra_escolhida:
-        playsound.playsound('mario.mp3')
         print(f'PARABÉNS, VOCÊ GANHOU !!!!!! ')
         print(f"Você acertou a palavra: {palavra_escolhida}")
         print("       ___________      ")
@@ -125,7 +123,6 @@ def verificarJogo():
         print("        '-------'       ")
         return False
     elif tentativas < 1:
-        playsound.playsound('naturo.mp3')
         print(f'A Palavra era {palavra_escolhida}')
         print(f'VOCÊ PERDEU !!! MAIS SORTE NA PRÓXIMA VEZ :)')
         return False
